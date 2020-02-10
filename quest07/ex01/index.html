@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>10 Common Software Architectural Patterns in a nutshell</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar container navbar-expand-lg navbar-light bg-light pt-3">
+        <a class="navbar-brand" href="#">
+            <svg width="35" height="35" viewBox="5 5 35 35" class="q"><path d="M5 40V5h35v35H5zm8.56-12.63c0 .56-.03.69-.32 1.03L10.8 31.4v.4h6.97v-.4L15.3 28.4c-.29-.34-.34-.5-.34-1.03v-8.95l6.13 13.36h.71l5.26-13.36v10.64c0 .3 0 .35-.19.53l-1.85 1.8v.4h9.2v-.4l-1.83-1.8c-.18-.18-.2-.24-.2-.53V15.94c0-.3.02-.35.2-.53l1.82-1.8v-.4h-6.47l-4.62 11.55-5.2-11.54h-6.8v.4l2.15 2.63c.24.3.29.37.29.77v10.35z"></path></svg>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">               
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign In</i></a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-dark">Get Started</button>
+                </li>
+               
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg medium-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#">                
+                <img alt="Towards Data Science" class="" src="https://miro.medium.com/max/97/1*5EUO1kUYBthpOCPzRj_l2g.png" width="97" height="36">
+            </a>
+            <div class="collapse navbar-collapse" text-white id="navbarText">
+                <ul class="navbar-nav mr-auto text-white">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">Data Science <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Machine Learning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Programming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Visualization</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">AI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Picks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">| More</a>
+                    </li>
+    
+                </ul>    
+    
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="intro">
+                    <h1 class="title">
+                        10 Common Software Architectural Patterns in a nutshell
+                    </h1>
+                    <div class="author">
+                        <div class="author-content">
+                            <div class="post-meta">
+                                <div>
+                                    <a class="navbar-brand" href="#">                
+                                        <img  alt="Author image" class="author-img"
+                                        src="https://scontent-los2-1.xx.fbcdn.net/v/t1.0-1/c0.0.160.160a/p160x160/44488153_1110912229058207_8444801217502117888_n.jpg?_nc_cat=105&_nc_oc=AQkvYEoTFIkyaaXd1LDkmRJu33-5x0H2VVpM90N9LxHmshhUmEYIIC3q6ttc6yegGXE&_nc_ht=scontent-los2-1.xx&oh=bbf1695a3e2f3c86cc3b3f68a0d26857&oe=5EA1F75C" width="97" height="36">
+                                    </a>
+                                </div>
+                                <div class="author-meta">
+                                    <div class="author-name">
+                                        <div style="flex:1;">
+                                            <span>Abdulraheem Sherif Adavuruku</span>
+                                        </div>
+                                        <div class="follow">
+                                            <div class="btn btn-follow">
+                                                Follow
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="date">
+                                            <span>Dec 28, 2019 . 5 mins</span>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="social">
+                                <div class="items">                                          
+                                    <a class="socio-icon" href="#"><i class="fa fa-facebook"></i></a>
+                                    <a  class="socio-icon" href="#"><i class="fa fa-twitter"></i></a>
+                                    <a  class="socio-icon" href="#"><i class="fa fa-bookmark"></i></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="paragraph">
+                        Ever wondered how large enterprise scale systems are designed? Before major software development starts, we have to choose a suitable architecture that will provide us with the desired functionality and quality attributes. Hence, we should understand different architectures, before applying them to our design.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sit eaque nemo consectetur iusto facere cumque maiores ratione eveniet, sed, necessitatibus aspernatur quas debitis laborum? Doloribus natus cum pariatur a!
+                    </p>
+                    <figure class="figure">
+                        <img src="https://miro.medium.com/max/1039/1*M22DR3WPqbWXWidYIq2GwA.png" alt="">
+                        
+                      </figure>
+                      <h1>
+                          What is an Architectural Pattern ?
+                      </h1>
+                      <blockquote class="blockquote">
+                        <p class="mb-0">According to Wikipedia,</p>
+                        <footer class="blockquote-footer">An architectural pattern is a general, reusable solution to a commonly occurring problem in software architecture within a given context. Architectural patterns are similar to software design pattern but have a broader scope. <cite title="Source Title">Source Title</cite></footer>
+                      </blockquote>
+                    
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <a href="#">
+                        <h4>
+                            Discover Medium
+                        </h4>
+                    </a>
+                    <p>
+                        Welcome to a place where words matter. On Medium, smart voices and original ideas take center stage - with no ads in sight. Watch
+                    </p>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                        <h4>
+                            Make Medium yours
+                        </h4>
+                    </a>
+                    <p>
+                        Welcome to a place where words matter. On Medium, smart voices and original ideas take center stage - with no ads in sight. Watch
+                    </p>
+                </div>
+                <div class="col-4">
+                    <a href="#">
+                       <h4>
+                        Become a member
+                       </h4>
+                    </a>
+                    <p>Get unlimited access to the best stories on Medium — and support writers while you're at it. Just $5/month. Upgrade</p>
+                </div>
+                <hr>
+            </div>
+            <div class="row mt-5  justify-content-md-center">
+              
+                <div class="col-sm-8">
+                    <svg height="22" width="112" viewBox="0 0 111.5 22" class="pw"><path d="M56.3 19.5c0 .4 0 .5.3.7l1.5 1.4v.1h-6.5V19c-.7 1.8-2.4 3-4.3 3-3.3 0-5.8-2.6-5.8-7.5 0-4.5 2.6-7.6 6.3-7.6 1.6-.1 3.1.8 3.8 2.4V3.2c0-.3-.1-.6-.3-.7l-1.4-1.4V1l6.5-.8v19.3zm-4.8-.8V9.5c-.5-.6-1.2-.9-1.9-.9-1.6 0-3.1 1.4-3.1 5.7 0 4 1.3 5.4 3 5.4.8.1 1.6-.3 2-1zm9.1 3.1V9.4c0-.3-.1-.6-.3-.7l-1.4-1.5v-.1h6.5v12.5c0 .4 0 .5.3.7l1.4 1.4v.1h-6.5zm-.2-19.2C60.4 1.2 61.5 0 63 0c1.4 0 2.6 1.2 2.6 2.6S64.4 5.3 63 5.3a2.6 2.6 0 0 1-2.6-2.7zm22.5 16.9c0 .4 0 .5.3.7l1.5 1.4v.1h-6.5v-3.2c-.6 2-2.4 3.4-4.5 3.4-2.9 0-4.4-2.1-4.4-6.2 0-1.9 0-4.1.1-6.5 0-.3-.1-.5-.3-.7L67.7 7v.1H74v8c0 2.6.4 4.4 2 4.4.9-.1 1.7-.6 2.1-1.3V9.5c0-.3-.1-.6-.3-.7l-1.4-1.5v-.2h6.5v12.4zm22 2.3c0-.5.1-6.5.1-7.9 0-2.6-.4-4.5-2.2-4.5-.9 0-1.8.5-2.3 1.3.2.8.3 1.7.3 2.5 0 1.8-.1 4.2-.1 6.5 0 .3.1.5.3.7l1.5 1.4v.1H96c0-.4.1-6.5.1-7.9 0-2.7-.4-4.5-2.2-4.5-.9 0-1.7.5-2.2 1.3v9c0 .4 0 .5.3.7l1.4 1.4v.1h-6.5V9.5c0-.3-.1-.6-.3-.7l-1.4-1.5v-.2h6.5v3.1a4.6 4.6 0 0 1 4.6-3.4c2.2 0 3.6 1.2 4.2 3.5.7-2.1 2.7-3.6 4.9-3.5 2.9 0 4.5 2.2 4.5 6.2 0 1.9-.1 4.2-.1 6.5-.1.3.1.6.3.7l1.4 1.4v.1h-6.6zm-81.4-2l1.9 1.9v.1h-9.8v-.1l2-1.9c.2-.2.3-.4.3-.7V7.3c0-.5 0-1.2.1-1.8L11.4 22h-.1L4.5 6.8c-.1-.4-.2-.4-.3-.6v10c-.1.7 0 1.3.3 1.9l2.7 3.6v.1H0v-.1L2.7 18c.3-.6.4-1.3.3-1.9v-11c0-.5-.1-1.1-.5-1.5L.7 1.1V1h7l5.8 12.9L18.6 1h6.8v.1l-1.9 2.2c-.2.2-.3.5-.3.7v15.2c0 .2.1.5.3.6zm7.6-5.9c0 3.8 1.9 5.3 4.2 5.3 1.9.1 3.6-1 4.4-2.7h.1c-.8 3.7-3.1 5.5-6.5 5.5-3.7 0-7.2-2.2-7.2-7.4 0-5.5 3.5-7.6 7.3-7.6 3.1 0 6.4 1.5 6.4 6.2v.8h-8.7zm0-.8h4.3v-.8c0-3.9-.8-4.9-2-4.9-1.4.1-2.3 1.6-2.3 5.7z"></path></svg>
+                </div>
+                <div class="col-sm-4 about">
+                    <a href="" >About</a>
+                    <a href="" >Help</a>
+                    <a href="" >Legal</a>
+                </div>
+              
+              </div>
+        </div>
+    </footer>
+</body>
+</html>

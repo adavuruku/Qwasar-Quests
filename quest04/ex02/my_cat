@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+if ARGV.length > 0
+    ARGV.each{
+        |i|
+        begin
+            file = File.open(i,"r")
+            puts file.read()
+        #rescue
+        rescue Errno::ENOENT => e
+            puts "#{i}: No such file "
+        end
+    }
+else
+    puts "toto"
+end
